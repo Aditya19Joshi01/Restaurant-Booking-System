@@ -50,9 +50,10 @@ Follow these steps to get the application up and running on your local machine.
 First, clone the project from its GitHub repository and navigate into the project directory:
 
 ```bash
-git clone <YOUR_REPO_URL>
-cd <YOUR_PROJECT_FOLDER>
+git clone [<YOUR_REPO_URL>](https://github.com/Aditya19Joshi01/Restaurant-Booking-System.git)
 ```
+
+> **Note:** Use the .venv stored in Backend folder if you want to run it locally without using docker
 
 #### **2. Run with Docker Compose**
 
@@ -84,7 +85,9 @@ Navigate to the frontend URL to interact with the application.
 
 All API requests require a valid authorization token in the header. For testing purposes, use the following mock token:
 
-`Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFwcGVsbGErYXBpQHJlc2RpYXJ5LmNvbSIsIm5iZiI6MTc1NDQzMDgwNSwiZXhwIjoxNzU0NTE3MjA1LCJpYXQiOjE3NTQ0MzA4MDUsImlzcyI6IlNlbGYiLCJhdWQiOiJodHRwczovL2FwaS5yZXNkaWFyeS5jb20ifQ.g3yLsufdk8Fn2094SB3J3XW-KdBc0DY9a2Jiu_56ud8`
+```bash
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFwcGVsbGErYXBpQHJlc2RpYXJ5LmNvbSIsIm5iZiI6MTc1NDQzMDgwNSwiZXhwIjoxNzU0NTE3MjA1LCJpYXQiOjE3NTQ0MzA4MDUsImlzcyI6IlNlbGYiLCJhdWQiOiJodHRwczovL2FwaS5yZXNkaWFyeS5jb20ifQ.g3yLsufdk8Fn2094SB3J3XW-KdBc0DY9a2Jiu_56ud8`
+```
 
 -----
 

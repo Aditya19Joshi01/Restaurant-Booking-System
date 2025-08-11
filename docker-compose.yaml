@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./Restaurant-Booking-Mock-API-Server
+    ports:
+      - "8547:8547"
+    volumes:
+      - ./Restaurant-Booking-Mock-API-Server:/app
+    working_dir: /app
+    command: python -m app
+    stdin_open: true
+    tty: true
+
+  frontend:
+    build:
+      context: ./Restaurant-Booking-Frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./Restaurant-Booking-Frontend:/app
+      - /app/node_modules
+    working_dir: /app
+    command: npm run dev -- --host
+    stdin_open: true
+    tty: true
+    depends_on:
+      - backend
